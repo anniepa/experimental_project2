@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class shipController : MonoBehaviour{
-	[SerializeField] float fireRate = 0.5F;
+	[SerializeField] float fireRate = 0.0f;
 	[SerializeField] float speed = 10f;
 
 	[SerializeField] float top = -5f;
@@ -48,5 +48,13 @@ public class shipController : MonoBehaviour{
 			Mathf.Clamp(rb.position.x, left, right),
 			Mathf.Clamp(rb.position.y, top, bottom)			
 		);
+	}
+
+	void OnTriggerEnter2D(Collider2D other)
+	{
+		if (other.CompareTag("alien")) {
+			Destroy(gameObject);
+			Application.LoadLevel(Application.loadedLevel);
+		}
 	}
 }
