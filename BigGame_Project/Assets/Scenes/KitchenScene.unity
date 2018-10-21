@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -124,12 +124,12 @@ GameObject:
   - component: {fileID: 127170158}
   - component: {fileID: 127170157}
   m_Layer: 5
-  m_Name: Text Panel
+  m_Name: Dialogue Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &127170156
 RectTransform:
   m_ObjectHideFlags: 0
@@ -222,11 +222,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 149438444}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0dea480671cd2e468b7906a49357124, type: 3}
+  m_Script: {fileID: 11500000, guid: 38a86decbd40c294aa80f0caa9b7ed6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textPanel: {fileID: 127170155}
-  ContinueBtn: {fileID: 0}
+  dialogue:
+    sentences:
+    - "It\u2019s already 5:30 I should just make breakfast and head out before I miss
+      the bus.."
+    - "I don\u2019t know why wall clocks fell out of fashion, they\u2019re so useful."
 --- !u!61 &149438447
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -456,11 +459,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 229237013}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0dea480671cd2e468b7906a49357124, type: 3}
+  m_Script: {fileID: 11500000, guid: 38a86decbd40c294aa80f0caa9b7ed6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textPanel: {fileID: 127170155}
-  ContinueBtn: {fileID: 0}
+  dialogue:
+    sentences:
+    - The perfect toast requires the perfect bread..
+    - Rye bread, only using 40% of the grain so it stays light in color and flavor
+      but enough grain to add texture to each bite..
+    - Spread a very thin layer of saltless butter over the bread before toasting..
+    - "We can\u2019t have the toast drying out yet.."
+    - "Once I\u2019ve cooked it for precisely three quarters of the time required
+      to burn the thing It will stop"
+    - I set this up by locking the toaster in its highest setting..
+    - and forcing the timer to move quicker with a few strategically placed paperclips..
+    - "Sure it\u2019s dangerous but a true artist doesn\u2019t know the meaning of
+      the words \u201Cflagrant fire hazard\u201D.."
+    - "Obviously, once it comes out, it doesn\u2019t have enough butter.."
+    - "so after I take it out out I\u2019ll lather on a generous amount of salted
+      butter and add a pinch of cinnamon because it\u2019s fall."
 --- !u!1 &534669902
 GameObject:
   m_ObjectHideFlags: 0
@@ -646,7 +663,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1051134424}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1867680979}
+        m_MethodName: DisplayNextSentence
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1051134424
@@ -721,11 +749,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1179334480}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0dea480671cd2e468b7906a49357124, type: 3}
+  m_Script: {fileID: 11500000, guid: 38a86decbd40c294aa80f0caa9b7ed6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textPanel: {fileID: 127170155}
-  ContinueBtn: {fileID: 0}
+  dialogue:
+    sentences:
+    - "Wash up day isn\u2019t until the 26th so I\u2019ve got at least a week until
+      I need to think about those.."
+    - I just hope I can make these four plates last.
 --- !u!61 &1179334483
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -818,7 +849,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: The perfect toast requires the perfect bread.
+  m_Text: 
 --- !u!222 &1347574603
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -864,11 +895,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1479117580}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0dea480671cd2e468b7906a49357124, type: 3}
+  m_Script: {fileID: 11500000, guid: 38a86decbd40c294aa80f0caa9b7ed6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textPanel: {fileID: 127170155}
-  ContinueBtn: {fileID: 0}
+  dialogue:
+    sentences:
+    - "I bought that newspaper three weeks ago and I still haven\u2019t finished the
+      crossword.."
+    - Yesterday I managed to figure 31 across and 12 down..
+    - "I just need an 8 letter word for realization, second letter \u201CH.\u201D"
 --- !u!61 &1479117583
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1026,11 +1061,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1765012120}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0dea480671cd2e468b7906a49357124, type: 3}
+  m_Script: {fileID: 11500000, guid: 38a86decbd40c294aa80f0caa9b7ed6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textPanel: {fileID: 127170155}
-  ContinueBtn: {fileID: 0}
+  dialogue:
+    sentences:
+    - "I wonder if there\u2019s any salami left in there.."
+    - "Obviously I won\u2019t eat it for breakfast, I\u2019m not a monster. But it\u2019s
+      nice to have."
 --- !u!61 &1765012123
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1056,6 +1094,46 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!1 &1867680977
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1867680978}
+  - component: {fileID: 1867680979}
+  m_Layer: 0
+  m_Name: DialogueManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1867680978
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1867680977}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1867680979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1867680977}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0dea480671cd2e468b7906a49357124, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2036719247
 GameObject:
   m_ObjectHideFlags: 0
@@ -1156,11 +1234,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 2133908293}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0dea480671cd2e468b7906a49357124, type: 3}
+  m_Script: {fileID: 11500000, guid: 38a86decbd40c294aa80f0caa9b7ed6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textPanel: {fileID: 127170155}
-  ContinueBtn: {fileID: 0}
+  dialogue:
+    sentences:
+    - My favorite toaster..
+    - "This one looks just like the one my used used to use when he taught me our
+      family\u2019s secret toast technique.."
+    - "All I gotta do is slap some bread in this bad boy and we\u2019re in business."
 --- !u!61 &2133908296
 BoxCollider2D:
   m_ObjectHideFlags: 0

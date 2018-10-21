@@ -3,22 +3,43 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class DialogueSystem : MonoBehaviour {
+public class DialogueSystem : MonoBehaviour
+{
 
-    public GameObject textPanel;
-    public GameObject ContinueBtn;
-    public ArrayList text;
+    private Queue<string> sentences;
 
-	// Use this for initialization
-	void Start () {
-        textPanel.SetActive(false);
-	}
-
-    // Update is called once per frame
-    private void OnMouseOver()
+    void Start ()
     {
-        textPanel.SetActive(true);
+      sentences = new Queue<string>();
     }
 
-    
+    public void StartDialogue (Dialogue dialogue)
+    {
+      Debug.Log("Starting monologue");
+
+      sentences.Clear();
+
+      foreach (string sentence in dialogue.sentences)
+      {
+        sentences.Enqueue(sentence);
+      }
+
+      DisplayNextSentence();
+    }
+
+    public void DisplayNextSentence ()
+    {
+      if (sentences.Count == 0)
+      {
+        EndDialogue();
+        return;
+      }
+      string sentence = sentences.Dequeue();
+      Debug.Log(sentence);
+    }
+
+    void EndDialogue()
+    {
+      Debug.Log("End of monologue");
+    }
 }

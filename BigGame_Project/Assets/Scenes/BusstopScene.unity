@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -122,6 +122,7 @@ GameObject:
   m_Component:
   - component: {fileID: 340591996}
   - component: {fileID: 340591997}
+  - component: {fileID: 340591998}
   m_Layer: 0
   m_Name: Sign Trigger
   m_TagString: Untagged
@@ -167,6 +168,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &340591998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 340591995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38a86decbd40c294aa80f0caa9b7ed6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    sentences:
+    - The Blue Line has always had a weird, inefficient shape to it but it stops right
+      outside my house..
+    - "So I guess that\u2019s the price we pay for convenience.."
+    - That and the 30 bucks a month.
 --- !u!1 &570263070
 GameObject:
   m_ObjectHideFlags: 0
@@ -251,6 +269,7 @@ GameObject:
   m_Component:
   - component: {fileID: 658379759}
   - component: {fileID: 658379760}
+  - component: {fileID: 658379761}
   m_Layer: 0
   m_Name: Guy Trigger
   m_TagString: Untagged
@@ -296,6 +315,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &658379761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 658379758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38a86decbd40c294aa80f0caa9b7ed6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    sentences:
+    - "I think we\u2019re neighbors. I certainly see him here enough.."
+    - He always looks too engaged in his newspaper for me to strike up a conversation
+      with him..
+    - "I wonder if he\u2019s better at the crosswords than me."
 --- !u!1 &707514856
 GameObject:
   m_ObjectHideFlags: 0
@@ -305,6 +341,7 @@ GameObject:
   m_Component:
   - component: {fileID: 707514857}
   - component: {fileID: 707514858}
+  - component: {fileID: 707514859}
   m_Layer: 0
   m_Name: Bird Trigger
   m_TagString: Untagged
@@ -350,6 +387,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &707514859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 707514856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38a86decbd40c294aa80f0caa9b7ed6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    sentences:
+    - "Why don\u2019t birds need to take the bus?"
+    - "I shouldn\u2019t harbor too much resentment. Most birds run off for the winter.."
+    - "..but this little trooper\u2019s sticking it out. Good on you, bird.\r\n"
 --- !u!1 &970019360
 GameObject:
   m_ObjectHideFlags: 0
@@ -359,6 +412,7 @@ GameObject:
   m_Component:
   - component: {fileID: 970019361}
   - component: {fileID: 970019362}
+  - component: {fileID: 970019363}
   m_Layer: 0
   m_Name: Sunrise Triggrer
   m_TagString: Untagged
@@ -404,6 +458,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &970019363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 970019360}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38a86decbd40c294aa80f0caa9b7ed6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    sentences:
+    - "I don\u2019t know why people opt to sleep through this. A sunrise is such a
+      beautiful lead in to a new day.."
+    - "No wonder poets can\u2019t get enough of it.."
+    - "I, however, don\u2019t have anything clever to say."
 --- !u!1 &1231498499
 GameObject:
   m_ObjectHideFlags: 0
@@ -413,6 +484,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1231498500}
   - component: {fileID: 1231498501}
+  - component: {fileID: 1231498502}
   m_Layer: 0
   m_Name: Left Tree Trigger
   m_TagString: Untagged
@@ -458,6 +530,24 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1231498502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1231498499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38a86decbd40c294aa80f0caa9b7ed6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    sentences:
+    - We get a solid month and a half of trees looking like this around here every
+      year..
+    - "I like to milk every second I can out of it. It\u2019s such a lovely change
+      from the monotonous green of the summer.."
+    - It is getting a little chilly, though.
 --- !u!1 &1289516048
 GameObject:
   m_ObjectHideFlags: 0
@@ -467,6 +557,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1289516049}
   - component: {fileID: 1289516050}
+  - component: {fileID: 1289516051}
   m_Layer: 0
   m_Name: Bottom Tree Trigger
   m_TagString: Untagged
@@ -512,6 +603,24 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1289516051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1289516048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38a86decbd40c294aa80f0caa9b7ed6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    sentences:
+    - We get a solid month and a half of trees looking like this around here every
+      year..
+    - "I like to milk every second I can out of it. It\u2019s such a lovely change
+      from the monotonous green of the summer.."
+    - It is getting a little chilly, though.
 --- !u!1 &1300328547
 GameObject:
   m_ObjectHideFlags: 0
@@ -521,6 +630,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1300328548}
   - component: {fileID: 1300328549}
+  - component: {fileID: 1300328550}
   m_Layer: 0
   m_Name: Right Bench Trigger
   m_TagString: Untagged
@@ -566,6 +676,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1300328550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1300328547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38a86decbd40c294aa80f0caa9b7ed6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    sentences:
+    - "I\u2019ve really like this bench, it\u2019s always warm even in the winter."
+    - That may be because of the people who always pass out drunk on it. But I still
+      never have.
+    - '*sigh* Always the bridesmaid...'
 --- !u!1 &1452902499
 GameObject:
   m_ObjectHideFlags: 0
@@ -575,6 +702,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1452902500}
   - component: {fileID: 1452902501}
+  - component: {fileID: 1452902502}
   m_Layer: 0
   m_Name: Right Tree Trigger
   m_TagString: Untagged
@@ -620,6 +748,24 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.99820244}
   m_EdgeRadius: 0
+--- !u!114 &1452902502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1452902499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38a86decbd40c294aa80f0caa9b7ed6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    sentences:
+    - We get a solid month and a half of trees looking like this around here every
+      year..
+    - "I like to milk every second I can out of it. It\u2019s such a lovely change
+      from the monotonous green of the summer.."
+    - It is getting a little chilly, though.
 --- !u!1 &1472279328
 GameObject:
   m_ObjectHideFlags: 0
@@ -629,6 +775,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1472279329}
   - component: {fileID: 1472279330}
+  - component: {fileID: 1472279331}
   m_Layer: 0
   m_Name: Left Bench Trigger
   m_TagString: Untagged
@@ -674,6 +821,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1472279331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1472279328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38a86decbd40c294aa80f0caa9b7ed6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    sentences:
+    - "I\u2019ve really like this bench, it\u2019s always warm even in the winter."
+    - That may be because of the people who always pass out drunk on it. But I still
+      never have.
+    - '*sigh* Always the bridesmaid...'
 --- !u!1 &1611924553
 GameObject:
   m_ObjectHideFlags: 0
