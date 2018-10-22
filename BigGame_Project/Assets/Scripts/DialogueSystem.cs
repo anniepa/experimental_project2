@@ -1,4 +1,6 @@
-﻿using System.Collections;
+/* Puts the dialogue into a Queue which will then display each sentence in the
+dialogue text box */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -6,8 +8,11 @@ using UnityEngine.UI;
 public class DialogueSystem : MonoBehaviour
 {
 
+    //Variables
+    public Text dialogueText; //text box that will display dialogue
     private Queue<string> sentences;
 
+    //Methods
     void Start ()
     {
       sentences = new Queue<string>();
@@ -15,13 +20,13 @@ public class DialogueSystem : MonoBehaviour
 
     public void StartDialogue (Dialogue dialogue)
     {
-      Debug.Log("Starting monologue");
+      Debug.Log("Starting dialogue");
 
       sentences.Clear();
 
       foreach (string sentence in dialogue.sentences)
       {
-        sentences.Enqueue(sentence);
+        sentences.Enqueue(sentence); //puts the sentences into the queue
       }
 
       DisplayNextSentence();
@@ -35,6 +40,7 @@ public class DialogueSystem : MonoBehaviour
         return;
       }
       string sentence = sentences.Dequeue();
+      dialogueText.text = sentence;
       Debug.Log(sentence);
     }
 

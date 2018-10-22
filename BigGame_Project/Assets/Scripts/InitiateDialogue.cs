@@ -1,14 +1,14 @@
-using System.Collections;
+/* Starts playing the dialogue if the player clicks on an interactable object */
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class InitiateDialogue : MonoBehaviour {
 
-		//Variables
-		public Dialogue dialogue;
-		private bool dialogueOn;
-		Collider2D thisCollider;
+	//Variables
+	public Dialogue dialogue;
+	private bool dialogueOn; //used to dictate whether dialogue is being played
+	Collider2D thisCollider;
 
 	//Methods
 	private void Start ()
@@ -16,7 +16,7 @@ public class InitiateDialogue : MonoBehaviour {
 		dialogueOn = false;
 		thisCollider = GetComponent<Collider2D>();
 	}
-/*
+/* Alternate method for turning off the triggers
 	private void OnMouseOver ()
 	{
 		if(dialogueOn == false)
@@ -49,7 +49,7 @@ public class InitiateDialogue : MonoBehaviour {
 		}
 	}
 
-	public void TriggerDialogue ()
+	public void TriggerDialogue () //begins playing the dialogue attached to this trigger
 	{
 		FindObjectOfType<DialogueSystem>().StartDialogue(dialogue);
 	}
