@@ -7,7 +7,7 @@ public class InitiateDialogue : MonoBehaviour {
 
 	//Variables
 	public Dialogue dialogue;
-	private bool dialogueOn; //used to dictate whether dialogue is being played
+	private static bool dialogueOn; //used to dictate whether dialogue is being played, applies to all tirggers
 	Collider2D thisCollider;
 
 	//Methods
@@ -48,6 +48,14 @@ public class InitiateDialogue : MonoBehaviour {
 			return;
 		}
 	}
+
+    public void ResetTrigger()
+    {
+        dialogueOn = false;
+        thisCollider.enabled = true;
+        Debug.Log("Dialogue Reset");
+    }
+
 
 	public void TriggerDialogue () //begins playing the dialogue attached to this trigger
 	{
