@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class gameManager : MonoBehaviour {
 
@@ -10,13 +11,20 @@ public class gameManager : MonoBehaviour {
 	[SerializeField] float startWait;
 	[SerializeField] float spawnWait;
 	[SerializeField] float waveWait;
+	[SerializeField] Text scoreText;
+	private int score;
+
+	List<GameObject> active;
+	Coroutine spawns;
 	void Start()
 	{
-		StartCoroutine(SpawnWaves());
+		active = new List<GameObject>();
+		spawns = StartCoroutine(SpawnWaves());
+		score = 0;
+		scoreText.text = score.ToString();
 	}
 
-	IEnumerator SpawnWaves()
-	{
+	IEnumerator SpawnWaves(){
 		yield return new WaitForSeconds(startWait);
 
 		while(true) {
@@ -26,7 +34,7 @@ public class gameManager : MonoBehaviour {
 				Vector3 pos = new Vector3(Random.Range(-spawnValues.x, spawnValues.x), spawnValues.y, spawnValues.z);
 				Quaternion rot = Quaternion.identity;
 
-				Instantiate(enemy, pos, rot);
+				active.Add(Instantiate(enemy, pos, rot));
 
 				yield return new WaitForSeconds(spawnWait);
 			}
@@ -34,4 +42,18 @@ public class gameManager : MonoBehaviour {
 			yield return new WaitForSeconds(waveWait);
 		}
 	}
+
+	public void addScore(int points){
+		score += points;
+		scoreText.text = score.ToString();
+	}
+	public void gameReset(){
+		foreach(GameObject g in active){
+			Destroy(g);
+		}
+		StopCoroutine(spawns);
+		spawns = StartCoroutine(SpawnWaves());
+		score = 0;
+	}
+
 }

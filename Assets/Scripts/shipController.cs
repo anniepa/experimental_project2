@@ -3,15 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class shipController : MonoBehaviour{
-	[SerializeField] float fireRate = 0.0f;
+	[SerializeField] float fireRate = 1f;
 	[SerializeField] float speed = 10f;
 
-	[SerializeField] float top = -5f;
-	[SerializeField] float bottom = 5f;
+	[SerializeField] float bottom = -5f;
+	[SerializeField] float top = 5f;
 	[SerializeField] float left = -5f;
 	[SerializeField] float right = 5f;
 	[SerializeField] GameObject shot;
 	[SerializeField] Transform shotSpawn;
+
+	[SerializeField] gameManager manager;
 
 	private float myTime = 0.0F;
 	private float nextFire = 0.5F;
@@ -50,11 +52,17 @@ public class shipController : MonoBehaviour{
 		);
 	}
 
+	void reset(){
+		//do more with this ofc
+		manager.gameReset();
+		gameObject.transform.position = new Vector3(0f, -2.5f, 0f);
+		
+	}
+
 	void OnTriggerEnter2D(Collider2D other)
 	{
 		if (other.CompareTag("alien")) {
-			Destroy(gameObject);
-			Application.LoadLevel(Application.loadedLevel);
+			reset();
 		}
 	}
 }
