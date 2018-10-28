@@ -54,7 +54,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 0.0001
   m_LinearDrag: 0
   m_AngularDrag: 0
   m_GravityScale: 0
@@ -62,7 +62,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 1
 --- !u!58 &58358156286219150
 CircleCollider2D:
   m_ObjectHideFlags: 1
@@ -91,6 +91,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 15
   top: 4.5
+  left: -2.2
+  right: 2.2
 --- !u!212 &212487478017103872
 SpriteRenderer:
   m_ObjectHideFlags: 1

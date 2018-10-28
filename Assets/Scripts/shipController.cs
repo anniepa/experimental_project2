@@ -18,11 +18,15 @@ public class shipController : MonoBehaviour{
 	private float myTime = 0.0F;
 	private float nextFire = 0.5F;
 	private Rigidbody2D rb;
-	private AudioSource audioSource;
+	private Animator animator;
+	private AudioSource pew;
+	private bool disable;
 
 	void Start(){
 		rb = GetComponent<Rigidbody2D>();
-		//audioSource = GetComponent<AudioSource>();
+		animator = GetComponent<Animator>();
+		disable = false;
+		//pew = GetComponent<AudioSource>();
 	}
 
 	void Update(){
@@ -32,7 +36,7 @@ public class shipController : MonoBehaviour{
 			nextFire = myTime + fireRate;
 			Instantiate(shot, shotSpawn.position, shotSpawn.rotation);
 
-			//audioSource.Play();
+			//pew.Play();
 
 			nextFire = nextFire - myTime;
 			myTime = 0.0F;
@@ -40,29 +44,35 @@ public class shipController : MonoBehaviour{
 	}
 
 	void FixedUpdate(){
-		float moveHorizontal = Input.GetAxis("Horizontal");
-		float moveVertical = Input.GetAxis("Vertical");
+		if(!disable){
+			float moveHorizontal = Input.GetAxis("Horizontal");
+			float moveVertical = Input.GetAxis("Vertical");
 
-		Vector2 movement = new Vector2(moveHorizontal, moveVertical);
-		rb.velocity = movement * speed;
+			Vector2 movement = new Vector2(moveHorizontal, moveVertical);
+			rb.velocity = movement * speed;
 
-		rb.position = new Vector2(
-			Mathf.Clamp(rb.position.x, left, right),
-			Mathf.Clamp(rb.position.y, top, bottom)			
-		);
+			rb.position = new Vector2(
+				Mathf.Clamp(rb.position.x, left, right),
+				Mathf.Clamp(rb.position.y, top, bottom)			
+			);
+		}
+		
 	}
 
-	void reset(){
-		//do more with this ofc
-		manager.gameReset();
+	IEnumerator reset(){
+		manager.loseLife();
+		disable = true;
+		rb.velocity = new Vector2(0f,0f);
+		animator.SetTrigger("hurt");
 		gameObject.transform.position = new Vector3(0f, -2.5f, 0f);
-		
+		yield return new WaitForSeconds(0.5f);
+		disable = false;
 	}
 
 	void OnTriggerEnter2D(Collider2D other)
 	{
 		if (other.CompareTag("alien")) {
-			reset();
+			StartCoroutine(reset());
 		}
 	}
 }

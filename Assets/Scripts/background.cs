@@ -5,17 +5,16 @@ using UnityEngine;
 public class background : MonoBehaviour
 {
 	public float scrollSpeed;
-	private float tileSizeZ;
+	[SerializeField] float tileSize;
 
 	private Vector3 startPosition;
 
 	void Start(){
 		startPosition = transform.position;
-		tileSizeZ = transform.localScale.y;
 	}
 
 	void Update(){
-		float newPosition = Mathf.Repeat(Time.time * scrollSpeed, tileSizeZ);
+		float newPosition = Mathf.Repeat(Time.time * scrollSpeed, tileSize);
 		transform.position = startPosition + Vector3.down * newPosition;
 	}
 }

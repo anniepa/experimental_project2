@@ -47,6 +47,10 @@ public class gameManager : MonoBehaviour {
 		score += points;
 		scoreText.text = score.ToString();
 	}
+
+	public void loseLife(){
+		Debug.Log("lifelost");
+	}
 	public void gameReset(){
 		foreach(GameObject g in active){
 			Destroy(g);

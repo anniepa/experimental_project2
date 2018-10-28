@@ -6,6 +6,8 @@ public class bullet : MonoBehaviour {
 
 	[SerializeField] float speed = 15f;
 	[SerializeField] float top = 4.5f;
+	[SerializeField] float left = 4.5f;
+	[SerializeField] float right = 4.5f;
 	private Rigidbody2D rb;
 
 	void Start()
@@ -15,7 +17,7 @@ public class bullet : MonoBehaviour {
 	}
 
 	void FixedUpdate(){
-		if (rb.position.y > top){
+		if (rb.position.y > top || rb.position.x < left || rb.position.x > right){
 				Destroy(gameObject);
 		}
 	}
