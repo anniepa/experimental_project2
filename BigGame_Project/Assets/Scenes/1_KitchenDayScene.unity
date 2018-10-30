@@ -166,8 +166,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     sentences:
-    - "It\u2019s already 5:30 I should just make breakfast and head out before I miss
-      the bus.."
+    - "It\u2019s already 5:30. I should just make breakfast and head out before I
+      miss the bus."
     - "I don\u2019t know why wall clocks fell out of fashion, they\u2019re so useful."
 --- !u!61 &149438447
 BoxCollider2D:
@@ -405,7 +405,7 @@ MonoBehaviour:
     sentences:
     - The perfect toast requires the perfect bread.
     - Rye bread, only using 40% of the grain so it stays light in color and flavor
-      but enough grain to add texture to each bite.
+      but still enough grain to add texture to each bite.
     - Spread a very thin layer of saltless butter over the bread before toasting.
     - "We can\u2019t have the toast drying out yet."
     - "Once I\u2019ve cooked it for precisely three quarters of the time required
@@ -414,9 +414,9 @@ MonoBehaviour:
     - and forcing the timer to move quicker with a few strategically placed paperclips.
     - "Sure it\u2019s dangerous but a true artist doesn\u2019t know the meaning of
       the words \u201Cflagrant fire hazard\u201D."
-    - "Obviously, once it comes out, it doesn\u2019t have enough butter."
-    - "so after I take it out out I\u2019ll lather on a generous amount of salted
-      butter and add a pinch of cinnamon because it\u2019s fall."
+    - "Obviously, once it comes out, it doesn\u2019t have enough butter.."
+    - "so I\u2019ll lather on a generous amount of salted butter and add a pinch of
+      cinnamon because it\u2019s fall."
 --- !u!1001 &319263560
 Prefab:
   m_ObjectHideFlags: 0
@@ -771,7 +771,7 @@ MonoBehaviour:
   dialogue:
     sentences:
     - "Wash up day isn\u2019t until the 26th so I\u2019ve got at least a week until
-      I need to think about those.."
+      I need to think about those."
     - I just hope I can make these four plates last.
 --- !u!61 &1179334483
 BoxCollider2D:
@@ -848,8 +848,8 @@ MonoBehaviour:
   dialogue:
     sentences:
     - "I bought that newspaper three weeks ago and I still haven\u2019t finished the
-      crossword.."
-    - Yesterday I managed to figure 31 across and 12 down..
+      crossword."
+    - Yesterday I managed to figure out 31 across and 12 down.
     - "I just need an 8 letter word for realization, second letter \u201CH.\u201D"
 --- !u!61 &1479117583
 BoxCollider2D:
@@ -1065,8 +1065,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     sentences:
-    - "I wonder if there\u2019s any salami left in there.."
-    - "Obviously I won\u2019t eat it for breakfast, I\u2019m not a monster. But it\u2019s
+    - "I wonder if there\u2019s any salami left in there."
+    - "Obviously I won\u2019t eat it for breakfast. I\u2019m not a monster, but it\u2019s
       nice to have."
 --- !u!61 &1765012123
 BoxCollider2D:
@@ -1205,8 +1205,8 @@ MonoBehaviour:
   dialogue:
     sentences:
     - My favorite toaster..
-    - "This one looks just like the one my used used to use when he taught me our
-      family\u2019s secret toast technique.."
+    - "This one looks just like the one my dad used to use when he taught me our family\u2019s
+      secret toast technique."
     - "All I gotta do is slap some bread in this bad boy and we\u2019re in business."
 --- !u!61 &2133908296
 BoxCollider2D:

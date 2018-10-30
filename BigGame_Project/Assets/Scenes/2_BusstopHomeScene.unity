@@ -958,7 +958,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     sentences:
-    - "I\u2019ve really like this bench, it\u2019s always warm even in the winter."
+    - "I really like this bench, it\u2019s always warm even in the winter."
     - That may be because of the people who always pass out drunk on it. But I still
       never have.
     - '*sigh* Always the bridesmaid...'
@@ -1103,7 +1103,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     sentences:
-    - "I\u2019ve really like this bench, it\u2019s always warm even in the winter."
+    - "I really like this bench, it\u2019s always warm even in the winter."
     - That may be because of the people who always pass out drunk on it. But I still
       never have.
     - '*sigh* Always the bridesmaid...'
