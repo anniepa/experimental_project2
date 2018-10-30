@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1173,6 +1173,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!95 &1820843408 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 95884971676796014, guid: 08c74c83e53f2cd4b8f38e1faa6fb9f6,
+    type: 2}
+  m_PrefabInternal: {fileID: 2144578234}
 --- !u!1 &1845745839
 GameObject:
   m_ObjectHideFlags: 0
@@ -1315,6 +1320,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueText: {fileID: 2075017010}
+  animator: {fileID: 1820843408}
 --- !u!4 &2003092640
 Transform:
   m_ObjectHideFlags: 0
@@ -1389,22 +1395,22 @@ Prefab:
     - target: {fileID: 224528467781719614, guid: 08c74c83e53f2cd4b8f38e1faa6fb9f6,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -433
+      value: 107
       objectReference: {fileID: 0}
     - target: {fileID: 224528467781719614, guid: 08c74c83e53f2cd4b8f38e1faa6fb9f6,
         type: 2}
       propertyPath: m_SizeDelta.x
-      value: -50
+      value: 1870
       objectReference: {fileID: 0}
     - target: {fileID: 224528467781719614, guid: 08c74c83e53f2cd4b8f38e1faa6fb9f6,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: -916.1
+      value: 163.90002
       objectReference: {fileID: 0}
     - target: {fileID: 224528467781719614, guid: 08c74c83e53f2cd4b8f38e1faa6fb9f6,
         type: 2}
       propertyPath: m_AnchorMin.x
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 224528467781719614, guid: 08c74c83e53f2cd4b8f38e1faa6fb9f6,
         type: 2}
@@ -1414,12 +1420,12 @@ Prefab:
     - target: {fileID: 224528467781719614, guid: 08c74c83e53f2cd4b8f38e1faa6fb9f6,
         type: 2}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 224528467781719614, guid: 08c74c83e53f2cd4b8f38e1faa6fb9f6,
         type: 2}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224528467781719614, guid: 08c74c83e53f2cd4b8f38e1faa6fb9f6,
         type: 2}

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -168,22 +168,22 @@ Prefab:
     - target: {fileID: 224528467781719614, guid: 08c74c83e53f2cd4b8f38e1faa6fb9f6,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -433
+      value: 107
       objectReference: {fileID: 0}
     - target: {fileID: 224528467781719614, guid: 08c74c83e53f2cd4b8f38e1faa6fb9f6,
         type: 2}
       propertyPath: m_SizeDelta.x
-      value: -50
+      value: 1870
       objectReference: {fileID: 0}
     - target: {fileID: 224528467781719614, guid: 08c74c83e53f2cd4b8f38e1faa6fb9f6,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: -916.1
+      value: 163.90002
       objectReference: {fileID: 0}
     - target: {fileID: 224528467781719614, guid: 08c74c83e53f2cd4b8f38e1faa6fb9f6,
         type: 2}
       propertyPath: m_AnchorMin.x
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 224528467781719614, guid: 08c74c83e53f2cd4b8f38e1faa6fb9f6,
         type: 2}
@@ -193,12 +193,12 @@ Prefab:
     - target: {fileID: 224528467781719614, guid: 08c74c83e53f2cd4b8f38e1faa6fb9f6,
         type: 2}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 224528467781719614, guid: 08c74c83e53f2cd4b8f38e1faa6fb9f6,
         type: 2}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224528467781719614, guid: 08c74c83e53f2cd4b8f38e1faa6fb9f6,
         type: 2}
@@ -218,6 +218,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 224528467781719614, guid: 08c74c83e53f2cd4b8f38e1faa6fb9f6,
     type: 2}
   m_PrefabInternal: {fileID: 114633115}
+--- !u!95 &114633117 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 95884971676796014, guid: 08c74c83e53f2cd4b8f38e1faa6fb9f6,
+    type: 2}
+  m_PrefabInternal: {fileID: 114633115}
+--- !u!114 &114633118 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114305304398038056, guid: 08c74c83e53f2cd4b8f38e1faa6fb9f6,
+    type: 2}
+  m_PrefabInternal: {fileID: 114633115}
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1 &640098641
 GameObject:
   m_ObjectHideFlags: 0
@@ -396,6 +407,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 1020219756}
     m_Modifications:
+    - target: {fileID: 114241634798831368, guid: 1f28b5264adc66c44aff8c26fa1db64f,
+        type: 2}
+      propertyPath: dialogue.sentences.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4795735440574452, guid: 1f28b5264adc66c44aff8c26fa1db64f, type: 2}
       propertyPath: m_LocalPosition.x
       value: -1.13
@@ -435,6 +451,17 @@ Prefab:
     - target: {fileID: 4795735440574452, guid: 1f28b5264adc66c44aff8c26fa1db64f, type: 2}
       propertyPath: m_LocalScale.y
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114241634798831368, guid: 1f28b5264adc66c44aff8c26fa1db64f,
+        type: 2}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: "I\u2019m glad that other people respect wall clocks the way I do. But
+        I don\u2019t trust this one."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114241634798831368, guid: 1f28b5264adc66c44aff8c26fa1db64f,
+        type: 2}
+      propertyPath: dialogue.sentences.Array.data[1]
+      value: It always seems to go too slow.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1f28b5264adc66c44aff8c26fa1db64f, type: 2}
@@ -562,6 +589,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 1020219756}
     m_Modifications:
+    - target: {fileID: 114241634798831368, guid: 1f28b5264adc66c44aff8c26fa1db64f,
+        type: 2}
+      propertyPath: dialogue.sentences.Array.size
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4795735440574452, guid: 1f28b5264adc66c44aff8c26fa1db64f, type: 2}
       propertyPath: m_LocalPosition.x
       value: 4.9
@@ -606,6 +638,22 @@ Prefab:
       propertyPath: m_LocalScale.x
       value: 4.78
       objectReference: {fileID: 0}
+    - target: {fileID: 114241634798831368, guid: 1f28b5264adc66c44aff8c26fa1db64f,
+        type: 2}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: This thing is older than me.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114241634798831368, guid: 1f28b5264adc66c44aff8c26fa1db64f,
+        type: 2}
+      propertyPath: dialogue.sentences.Array.data[1]
+      value: "It\u2019s not but it\u2019s like really old."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114241634798831368, guid: 1f28b5264adc66c44aff8c26fa1db64f,
+        type: 2}
+      propertyPath: dialogue.sentences.Array.data[2]
+      value: "I keep asking for a new one because it always makes a violent hissing
+        noise whenever I try to run solitaire but apparently that\u2019s a \u201Cfeature\u201D."
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1f28b5264adc66c44aff8c26fa1db64f, type: 2}
   m_IsPrefabAsset: 0
@@ -621,6 +669,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 1020219756}
     m_Modifications:
+    - target: {fileID: 114241634798831368, guid: 1f28b5264adc66c44aff8c26fa1db64f,
+        type: 2}
+      propertyPath: dialogue.sentences.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4795735440574452, guid: 1f28b5264adc66c44aff8c26fa1db64f, type: 2}
       propertyPath: m_LocalPosition.x
       value: 11.54
@@ -665,6 +718,17 @@ Prefab:
       propertyPath: m_LocalScale.x
       value: 3.17
       objectReference: {fileID: 0}
+    - target: {fileID: 114241634798831368, guid: 1f28b5264adc66c44aff8c26fa1db64f,
+        type: 2}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: Carol brings in these donuts every day. She knows someone at the coffee
+        shop down the road so we get the day old ones for free.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114241634798831368, guid: 1f28b5264adc66c44aff8c26fa1db64f,
+        type: 2}
+      propertyPath: dialogue.sentences.Array.data[1]
+      value: "They aren\u2019t bad if you skipped breakfast. Luckily I never do."
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1f28b5264adc66c44aff8c26fa1db64f, type: 2}
   m_IsPrefabAsset: 0
@@ -680,6 +744,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 1020219756}
     m_Modifications:
+    - target: {fileID: 114241634798831368, guid: 1f28b5264adc66c44aff8c26fa1db64f,
+        type: 2}
+      propertyPath: dialogue.sentences.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4795735440574452, guid: 1f28b5264adc66c44aff8c26fa1db64f, type: 2}
       propertyPath: m_LocalPosition.x
       value: -20.17
@@ -727,6 +796,17 @@ Prefab:
     - target: {fileID: 4795735440574452, guid: 1f28b5264adc66c44aff8c26fa1db64f, type: 2}
       propertyPath: m_LocalScale.z
       value: 1.0922182
+      objectReference: {fileID: 0}
+    - target: {fileID: 114241634798831368, guid: 1f28b5264adc66c44aff8c26fa1db64f,
+        type: 2}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: These donuts are from the shop on 5th. Where you buy them BY THE DONUT.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114241634798831368, guid: 1f28b5264adc66c44aff8c26fa1db64f,
+        type: 2}
+      propertyPath: dialogue.sentences.Array.data[1]
+      value: "They\u2019re really ritzy so we need to pitch in two dollars for every
+        one we eat but they\u2019re worth it."
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1f28b5264adc66c44aff8c26fa1db64f, type: 2}
@@ -871,6 +951,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 1020219756}
     m_Modifications:
+    - target: {fileID: 114241634798831368, guid: 1f28b5264adc66c44aff8c26fa1db64f,
+        type: 2}
+      propertyPath: dialogue.sentences.Array.size
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4795735440574452, guid: 1f28b5264adc66c44aff8c26fa1db64f, type: 2}
       propertyPath: m_LocalPosition.x
       value: -14.97
@@ -915,6 +1000,23 @@ Prefab:
       propertyPath: m_LocalScale.y
       value: 10.5
       objectReference: {fileID: 0}
+    - target: {fileID: 114241634798831368, guid: 1f28b5264adc66c44aff8c26fa1db64f,
+        type: 2}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: "I\u2019m glad my desk is so close to the water cooler."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114241634798831368, guid: 1f28b5264adc66c44aff8c26fa1db64f,
+        type: 2}
+      propertyPath: dialogue.sentences.Array.data[1]
+      value: The more time I spend drinking at that water cooler, the more time I
+        spend in the bathroom.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114241634798831368, guid: 1f28b5264adc66c44aff8c26fa1db64f,
+        type: 2}
+      propertyPath: dialogue.sentences.Array.data[2]
+      value: "I tend to feel so much thirstier on days where there\u2019s an important
+        meeting."
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1f28b5264adc66c44aff8c26fa1db64f, type: 2}
   m_IsPrefabAsset: 0
@@ -930,6 +1032,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 1020219756}
     m_Modifications:
+    - target: {fileID: 114241634798831368, guid: 1f28b5264adc66c44aff8c26fa1db64f,
+        type: 2}
+      propertyPath: dialogue.sentences.Array.size
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4795735440574452, guid: 1f28b5264adc66c44aff8c26fa1db64f, type: 2}
       propertyPath: m_LocalPosition.x
       value: 1.3
@@ -974,6 +1081,22 @@ Prefab:
       propertyPath: m_LocalScale.x
       value: 1.62
       objectReference: {fileID: 0}
+    - target: {fileID: 114241634798831368, guid: 1f28b5264adc66c44aff8c26fa1db64f,
+        type: 2}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: No one ever calls me on that. My cell phone is just way easier.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114241634798831368, guid: 1f28b5264adc66c44aff8c26fa1db64f,
+        type: 2}
+      propertyPath: dialogue.sentences.Array.data[1]
+      value: "I\u2019m starting to wonder if it\u2019s even connected to anything.
+        Maybe it was placed here as a joke and I just never got it."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114241634798831368, guid: 1f28b5264adc66c44aff8c26fa1db64f,
+        type: 2}
+      propertyPath: dialogue.sentences.Array.data[2]
+      value: "Well, it\u2019s mine now. I\u2019m taking it with me when I leave."
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1f28b5264adc66c44aff8c26fa1db64f, type: 2}
   m_IsPrefabAsset: 0
@@ -989,6 +1112,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 1020219756}
     m_Modifications:
+    - target: {fileID: 114241634798831368, guid: 1f28b5264adc66c44aff8c26fa1db64f,
+        type: 2}
+      propertyPath: dialogue.sentences.Array.size
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 4795735440574452, guid: 1f28b5264adc66c44aff8c26fa1db64f, type: 2}
       propertyPath: m_LocalPosition.x
       value: -0.45
@@ -1032,6 +1160,35 @@ Prefab:
     - target: {fileID: 4795735440574452, guid: 1f28b5264adc66c44aff8c26fa1db64f, type: 2}
       propertyPath: m_LocalScale.y
       value: 1.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 114241634798831368, guid: 1f28b5264adc66c44aff8c26fa1db64f,
+        type: 2}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: "These files don\u2019t seem to do anything."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114241634798831368, guid: 1f28b5264adc66c44aff8c26fa1db64f,
+        type: 2}
+      propertyPath: dialogue.sentences.Array.data[1]
+      value: "I was handed them three months ago and and I haven\u2019t looked at
+        them."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114241634798831368, guid: 1f28b5264adc66c44aff8c26fa1db64f,
+        type: 2}
+      propertyPath: dialogue.sentences.Array.data[2]
+      value: "The company hasn\u2019t gone under or anything. In fact, we just had
+        our best quarter in years."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114241634798831368, guid: 1f28b5264adc66c44aff8c26fa1db64f,
+        type: 2}
+      propertyPath: dialogue.sentences.Array.data[3]
+      value: "So I\u2019ve come to realize that the future of our company depends
+        on me not reading these documents."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114241634798831368, guid: 1f28b5264adc66c44aff8c26fa1db64f,
+        type: 2}
+      propertyPath: dialogue.sentences.Array.data[4]
+      value: "I don\u2019t know why I\u2019ve been trusted with this but I won\u2019t
+        let my co-workers down!"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1f28b5264adc66c44aff8c26fa1db64f, type: 2}
@@ -1080,6 +1237,16 @@ Prefab:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 114141350646110196, guid: 4832cf3178d60fc4591b7792d1f0fa1d,
+        type: 2}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 114633118}
+    - target: {fileID: 114141350646110196, guid: 4832cf3178d60fc4591b7792d1f0fa1d,
+        type: 2}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 114633117}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4832cf3178d60fc4591b7792d1f0fa1d, type: 2}
   m_IsPrefabAsset: 0
@@ -1090,6 +1257,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 1020219756}
     m_Modifications:
+    - target: {fileID: 114241634798831368, guid: 1f28b5264adc66c44aff8c26fa1db64f,
+        type: 2}
+      propertyPath: dialogue.sentences.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4795735440574452, guid: 1f28b5264adc66c44aff8c26fa1db64f, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0.4
@@ -1133,6 +1305,18 @@ Prefab:
     - target: {fileID: 4795735440574452, guid: 1f28b5264adc66c44aff8c26fa1db64f, type: 2}
       propertyPath: m_LocalScale.x
       value: 4.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 114241634798831368, guid: 1f28b5264adc66c44aff8c26fa1db64f,
+        type: 2}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: This is my collection of baseball player bobbleheads. Every year, when
+        I get my bonus, I get a new bobblehead to add to the collection.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114241634798831368, guid: 1f28b5264adc66c44aff8c26fa1db64f,
+        type: 2}
+      propertyPath: dialogue.sentences.Array.data[1]
+      value: "I don\u2019t watch baseball but I like the idea of being rich, shadowy
+        figure that gathers the best players of all time to play one last game."
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1f28b5264adc66c44aff8c26fa1db64f, type: 2}

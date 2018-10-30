@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -120,6 +120,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 1473943493}
     m_Modifications:
+    - target: {fileID: 114241634798831368, guid: 1f28b5264adc66c44aff8c26fa1db64f,
+        type: 2}
+      propertyPath: dialogue.sentences.Array.size
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 4795735440574452, guid: 1f28b5264adc66c44aff8c26fa1db64f, type: 2}
       propertyPath: m_LocalPosition.x
       value: -0.31
@@ -164,6 +169,31 @@ Prefab:
       propertyPath: m_LocalScale.x
       value: 2.83
       objectReference: {fileID: 0}
+    - target: {fileID: 114241634798831368, guid: 1f28b5264adc66c44aff8c26fa1db64f,
+        type: 2}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: CATCATCATCATCATCATCATCATCATCATCATCATCATCATCATCATCATCAT
+      objectReference: {fileID: 0}
+    - target: {fileID: 114241634798831368, guid: 1f28b5264adc66c44aff8c26fa1db64f,
+        type: 2}
+      propertyPath: dialogue.sentences.Array.data[1]
+      value: CATCATCATCATCATCATCATCATCATCATCATCATCATCATCATCATCAT
+      objectReference: {fileID: 0}
+    - target: {fileID: 114241634798831368, guid: 1f28b5264adc66c44aff8c26fa1db64f,
+        type: 2}
+      propertyPath: dialogue.sentences.Array.data[2]
+      value: CAT
+      objectReference: {fileID: 0}
+    - target: {fileID: 114241634798831368, guid: 1f28b5264adc66c44aff8c26fa1db64f,
+        type: 2}
+      propertyPath: dialogue.sentences.Array.data[3]
+      value: CATCATCATCATCATCATCATCATCATCATCATCATCATCATCAT
+      objectReference: {fileID: 0}
+    - target: {fileID: 114241634798831368, guid: 1f28b5264adc66c44aff8c26fa1db64f,
+        type: 2}
+      propertyPath: dialogue.sentences.Array.data[4]
+      value: I love cats.
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1f28b5264adc66c44aff8c26fa1db64f, type: 2}
   m_IsPrefabAsset: 0
@@ -179,6 +209,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 1473943493}
     m_Modifications:
+    - target: {fileID: 114241634798831368, guid: 1f28b5264adc66c44aff8c26fa1db64f,
+        type: 2}
+      propertyPath: dialogue.sentences.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4795735440574452, guid: 1f28b5264adc66c44aff8c26fa1db64f, type: 2}
       propertyPath: m_LocalPosition.x
       value: 9.43
@@ -223,6 +258,17 @@ Prefab:
       propertyPath: m_LocalScale.x
       value: 8.67
       objectReference: {fileID: 0}
+    - target: {fileID: 114241634798831368, guid: 1f28b5264adc66c44aff8c26fa1db64f,
+        type: 2}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: "There\u2019s something special about fall leaves that makes them look
+        beautiful in any weather."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114241634798831368, guid: 1f28b5264adc66c44aff8c26fa1db64f,
+        type: 2}
+      propertyPath: dialogue.sentences.Array.data[1]
+      value: I should ask them for some tips.
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1f28b5264adc66c44aff8c26fa1db64f, type: 2}
   m_IsPrefabAsset: 0
@@ -238,6 +284,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 1473943493}
     m_Modifications:
+    - target: {fileID: 114241634798831368, guid: 1f28b5264adc66c44aff8c26fa1db64f,
+        type: 2}
+      propertyPath: dialogue.sentences.Array.size
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4795735440574452, guid: 1f28b5264adc66c44aff8c26fa1db64f, type: 2}
       propertyPath: m_LocalPosition.x
       value: -6.92
@@ -282,6 +333,23 @@ Prefab:
       propertyPath: m_LocalScale.x
       value: 9.84
       objectReference: {fileID: 0}
+    - target: {fileID: 114241634798831368, guid: 1f28b5264adc66c44aff8c26fa1db64f,
+        type: 2}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: I was really lucky to snag the bench this time. I managed to sneak out
+        of work a little early just to get this honor.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114241634798831368, guid: 1f28b5264adc66c44aff8c26fa1db64f,
+        type: 2}
+      propertyPath: dialogue.sentences.Array.data[1]
+      value: "It does mean I need to wait a little longer but that\u2019s ok."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114241634798831368, guid: 1f28b5264adc66c44aff8c26fa1db64f,
+        type: 2}
+      propertyPath: dialogue.sentences.Array.data[2]
+      value: "I\u2019ve been sitting at a desk all day I deserve to rest up a little
+        and sit somewhere else for a change."
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1f28b5264adc66c44aff8c26fa1db64f, type: 2}
   m_IsPrefabAsset: 0
@@ -297,6 +365,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 1473943493}
     m_Modifications:
+    - target: {fileID: 114241634798831368, guid: 1f28b5264adc66c44aff8c26fa1db64f,
+        type: 2}
+      propertyPath: dialogue.sentences.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4795735440574452, guid: 1f28b5264adc66c44aff8c26fa1db64f, type: 2}
       propertyPath: m_LocalPosition.x
       value: 9.01
@@ -341,6 +414,17 @@ Prefab:
       propertyPath: m_LocalScale.y
       value: 9.11
       objectReference: {fileID: 0}
+    - target: {fileID: 114241634798831368, guid: 1f28b5264adc66c44aff8c26fa1db64f,
+        type: 2}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: "There\u2019s something special about fall leaves that makes them look
+        beautiful in any weather."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114241634798831368, guid: 1f28b5264adc66c44aff8c26fa1db64f,
+        type: 2}
+      propertyPath: dialogue.sentences.Array.data[1]
+      value: I should ask them for some tips.
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1f28b5264adc66c44aff8c26fa1db64f, type: 2}
   m_IsPrefabAsset: 0
@@ -356,6 +440,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 1473943493}
     m_Modifications:
+    - target: {fileID: 114241634798831368, guid: 1f28b5264adc66c44aff8c26fa1db64f,
+        type: 2}
+      propertyPath: dialogue.sentences.Array.size
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4795735440574452, guid: 1f28b5264adc66c44aff8c26fa1db64f, type: 2}
       propertyPath: m_LocalPosition.x
       value: -18.47
@@ -400,6 +489,22 @@ Prefab:
       propertyPath: m_LocalScale.x
       value: 3.54
       objectReference: {fileID: 0}
+    - target: {fileID: 114241634798831368, guid: 1f28b5264adc66c44aff8c26fa1db64f,
+        type: 2}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: "The day\u2019s only a little more than half over. There\u2019s plenty
+        of time for me to just hang around and chill out."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114241634798831368, guid: 1f28b5264adc66c44aff8c26fa1db64f,
+        type: 2}
+      propertyPath: dialogue.sentences.Array.data[1]
+      value: "Maybe I\u2019ll call up Dave. He\u2019s always free."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114241634798831368, guid: 1f28b5264adc66c44aff8c26fa1db64f,
+        type: 2}
+      propertyPath: dialogue.sentences.Array.data[2]
+      value: Dave really needs to get a job.
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1f28b5264adc66c44aff8c26fa1db64f, type: 2}
   m_IsPrefabAsset: 0
@@ -415,6 +520,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 1473943493}
     m_Modifications:
+    - target: {fileID: 114241634798831368, guid: 1f28b5264adc66c44aff8c26fa1db64f,
+        type: 2}
+      propertyPath: dialogue.sentences.Array.size
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4795735440574452, guid: 1f28b5264adc66c44aff8c26fa1db64f, type: 2}
       propertyPath: m_LocalPosition.x
       value: -10.15
@@ -459,6 +569,22 @@ Prefab:
       propertyPath: m_LocalScale.x
       value: 11.9
       objectReference: {fileID: 0}
+    - target: {fileID: 114241634798831368, guid: 1f28b5264adc66c44aff8c26fa1db64f,
+        type: 2}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: "The day\u2019s only a little more than half over. There\u2019s plenty
+        of time for me to just hang around and chill out."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114241634798831368, guid: 1f28b5264adc66c44aff8c26fa1db64f,
+        type: 2}
+      propertyPath: dialogue.sentences.Array.data[1]
+      value: "Maybe I\u2019ll call up Dave. He\u2019s always free."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114241634798831368, guid: 1f28b5264adc66c44aff8c26fa1db64f,
+        type: 2}
+      propertyPath: dialogue.sentences.Array.data[2]
+      value: Dave really needs to get a job.
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1f28b5264adc66c44aff8c26fa1db64f, type: 2}
   m_IsPrefabAsset: 0
@@ -474,6 +600,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 1473943493}
     m_Modifications:
+    - target: {fileID: 114241634798831368, guid: 1f28b5264adc66c44aff8c26fa1db64f,
+        type: 2}
+      propertyPath: dialogue.sentences.Array.size
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4795735440574452, guid: 1f28b5264adc66c44aff8c26fa1db64f, type: 2}
       propertyPath: m_LocalPosition.x
       value: 14.7
@@ -517,6 +648,22 @@ Prefab:
     - target: {fileID: 4795735440574452, guid: 1f28b5264adc66c44aff8c26fa1db64f, type: 2}
       propertyPath: m_LocalScale.x
       value: 1.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 114241634798831368, guid: 1f28b5264adc66c44aff8c26fa1db64f,
+        type: 2}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: "The day\u2019s only a little more than half over. There\u2019s plenty
+        of time for me to just hang around and chill out."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114241634798831368, guid: 1f28b5264adc66c44aff8c26fa1db64f,
+        type: 2}
+      propertyPath: dialogue.sentences.Array.data[1]
+      value: "Maybe I\u2019ll call up Dave. He\u2019s always free."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114241634798831368, guid: 1f28b5264adc66c44aff8c26fa1db64f,
+        type: 2}
+      propertyPath: dialogue.sentences.Array.data[2]
+      value: Dave really needs to get a job.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1f28b5264adc66c44aff8c26fa1db64f, type: 2}
@@ -675,22 +822,22 @@ Prefab:
     - target: {fileID: 224528467781719614, guid: 08c74c83e53f2cd4b8f38e1faa6fb9f6,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -433
+      value: 107
       objectReference: {fileID: 0}
     - target: {fileID: 224528467781719614, guid: 08c74c83e53f2cd4b8f38e1faa6fb9f6,
         type: 2}
       propertyPath: m_SizeDelta.x
-      value: -50
+      value: 1870
       objectReference: {fileID: 0}
     - target: {fileID: 224528467781719614, guid: 08c74c83e53f2cd4b8f38e1faa6fb9f6,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: -916.1
+      value: 163.90002
       objectReference: {fileID: 0}
     - target: {fileID: 224528467781719614, guid: 08c74c83e53f2cd4b8f38e1faa6fb9f6,
         type: 2}
       propertyPath: m_AnchorMin.x
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 224528467781719614, guid: 08c74c83e53f2cd4b8f38e1faa6fb9f6,
         type: 2}
@@ -700,12 +847,12 @@ Prefab:
     - target: {fileID: 224528467781719614, guid: 08c74c83e53f2cd4b8f38e1faa6fb9f6,
         type: 2}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 224528467781719614, guid: 08c74c83e53f2cd4b8f38e1faa6fb9f6,
         type: 2}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224528467781719614, guid: 08c74c83e53f2cd4b8f38e1faa6fb9f6,
         type: 2}
@@ -725,6 +872,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 224528467781719614, guid: 08c74c83e53f2cd4b8f38e1faa6fb9f6,
     type: 2}
   m_PrefabInternal: {fileID: 956323218}
+--- !u!95 &956323220 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 95884971676796014, guid: 08c74c83e53f2cd4b8f38e1faa6fb9f6,
+    type: 2}
+  m_PrefabInternal: {fileID: 956323218}
+--- !u!114 &956323221 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114305304398038056, guid: 08c74c83e53f2cd4b8f38e1faa6fb9f6,
+    type: 2}
+  m_PrefabInternal: {fileID: 956323218}
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1001 &973109003
 Prefab:
   m_ObjectHideFlags: 0
@@ -764,6 +922,16 @@ Prefab:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 114141350646110196, guid: 4832cf3178d60fc4591b7792d1f0fa1d,
+        type: 2}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 956323221}
+    - target: {fileID: 114141350646110196, guid: 4832cf3178d60fc4591b7792d1f0fa1d,
+        type: 2}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 956323220}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4832cf3178d60fc4591b7792d1f0fa1d, type: 2}
   m_IsPrefabAsset: 0
@@ -774,6 +942,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 1473943493}
     m_Modifications:
+    - target: {fileID: 114241634798831368, guid: 1f28b5264adc66c44aff8c26fa1db64f,
+        type: 2}
+      propertyPath: dialogue.sentences.Array.size
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4795735440574452, guid: 1f28b5264adc66c44aff8c26fa1db64f, type: 2}
       propertyPath: m_LocalPosition.x
       value: 4.11
@@ -817,6 +990,21 @@ Prefab:
     - target: {fileID: 4795735440574452, guid: 1f28b5264adc66c44aff8c26fa1db64f, type: 2}
       propertyPath: m_LocalScale.x
       value: 1.61
+      objectReference: {fileID: 0}
+    - target: {fileID: 114241634798831368, guid: 1f28b5264adc66c44aff8c26fa1db64f,
+        type: 2}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: What did you do today, bird? Fly anywhere nice?
+      objectReference: {fileID: 0}
+    - target: {fileID: 114241634798831368, guid: 1f28b5264adc66c44aff8c26fa1db64f,
+        type: 2}
+      propertyPath: dialogue.sentences.Array.data[1]
+      value: '*tweet tweet*'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114241634798831368, guid: 1f28b5264adc66c44aff8c26fa1db64f,
+        type: 2}
+      propertyPath: dialogue.sentences.Array.data[2]
+      value: Yeah, same.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1f28b5264adc66c44aff8c26fa1db64f, type: 2}
@@ -1031,6 +1219,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 1473943493}
     m_Modifications:
+    - target: {fileID: 114241634798831368, guid: 1f28b5264adc66c44aff8c26fa1db64f,
+        type: 2}
+      propertyPath: dialogue.sentences.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4795735440574452, guid: 1f28b5264adc66c44aff8c26fa1db64f, type: 2}
       propertyPath: m_LocalPosition.x
       value: -0.17
@@ -1074,6 +1267,17 @@ Prefab:
     - target: {fileID: 4795735440574452, guid: 1f28b5264adc66c44aff8c26fa1db64f, type: 2}
       propertyPath: m_LocalScale.y
       value: 10.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 114241634798831368, guid: 1f28b5264adc66c44aff8c26fa1db64f,
+        type: 2}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: "There\u2019s something special about fall leaves that makes them look
+        beautiful in any weather."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114241634798831368, guid: 1f28b5264adc66c44aff8c26fa1db64f,
+        type: 2}
+      propertyPath: dialogue.sentences.Array.data[1]
+      value: I should ask them for some tips.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1f28b5264adc66c44aff8c26fa1db64f, type: 2}
@@ -1152,6 +1356,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 1473943493}
     m_Modifications:
+    - target: {fileID: 114241634798831368, guid: 1f28b5264adc66c44aff8c26fa1db64f,
+        type: 2}
+      propertyPath: dialogue.sentences.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4795735440574452, guid: 1f28b5264adc66c44aff8c26fa1db64f, type: 2}
       propertyPath: m_LocalPosition.x
       value: -17.67
@@ -1195,6 +1404,17 @@ Prefab:
     - target: {fileID: 4795735440574452, guid: 1f28b5264adc66c44aff8c26fa1db64f, type: 2}
       propertyPath: m_LocalScale.x
       value: 3.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114241634798831368, guid: 1f28b5264adc66c44aff8c26fa1db64f,
+        type: 2}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: The blue line somehow makes even less sense backwards.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114241634798831368, guid: 1f28b5264adc66c44aff8c26fa1db64f,
+        type: 2}
+      propertyPath: dialogue.sentences.Array.data[1]
+      value: "Somehow that makes me love it all the more. There\u2019s no other bus
+        in the world that passes the same stop three times in ten minutes."
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1f28b5264adc66c44aff8c26fa1db64f, type: 2}

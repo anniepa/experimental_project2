@@ -8,13 +8,11 @@ public class InitiateDialogue : MonoBehaviour {
 	//Variables
 	public Dialogue dialogue;
 	private static bool dialogueOn; //used to dictate whether dialogue is being played, applies to all tirggers
-	Collider2D thisCollider;
 
 	//Methods
 	private void Start ()
 	{
 		dialogueOn = false;
-		thisCollider = GetComponent<Collider2D>();
 	}
 /* Alternate method for turning off the triggers
 	private void OnMouseOver ()
@@ -38,10 +36,9 @@ public class InitiateDialogue : MonoBehaviour {
 	{
 		if(dialogueOn == false)
 		{
-			thisCollider.enabled = !thisCollider;
-			Debug.Log("player has clicked the object");
-			TriggerDialogue();
-			dialogueOn = true;
+				Debug.Log("player has clicked " + this.name);
+				TriggerDialogue();
+				dialogueOn = true;
 		}
 		else
 		{
@@ -52,13 +49,11 @@ public class InitiateDialogue : MonoBehaviour {
     public void ResetTrigger()
     {
         dialogueOn = false;
-        thisCollider.enabled = true;
-        Debug.Log("Dialogue Reset");
+        Debug.Log("Dialogue for " + this.name + " is over.");
     }
-
 
 	public void TriggerDialogue () //begins playing the dialogue attached to this trigger
 	{
-		FindObjectOfType<DialogueSystem>().StartDialogue(dialogue);
+			FindObjectOfType<DialogueSystem>().StartDialogue(dialogue);
 	}
 }

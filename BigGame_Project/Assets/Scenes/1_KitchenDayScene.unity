@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -113,6 +113,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!95 &107845821 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 95884971676796014, guid: 08c74c83e53f2cd4b8f38e1faa6fb9f6,
+    type: 2}
+  m_PrefabInternal: {fileID: 319263560}
 --- !u!224 &127170156 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 224528467781719614, guid: 08c74c83e53f2cd4b8f38e1faa6fb9f6,
@@ -398,18 +403,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     sentences:
-    - The perfect toast requires the perfect bread..
+    - The perfect toast requires the perfect bread.
     - Rye bread, only using 40% of the grain so it stays light in color and flavor
-      but enough grain to add texture to each bite..
-    - Spread a very thin layer of saltless butter over the bread before toasting..
-    - "We can\u2019t have the toast drying out yet.."
+      but enough grain to add texture to each bite.
+    - Spread a very thin layer of saltless butter over the bread before toasting.
+    - "We can\u2019t have the toast drying out yet."
     - "Once I\u2019ve cooked it for precisely three quarters of the time required
-      to burn the thing It will stop"
-    - I set this up by locking the toaster in its highest setting..
-    - and forcing the timer to move quicker with a few strategically placed paperclips..
+      to burn the thing it will stop."
+    - I set this up by locking the toaster in its highest setting.
+    - and forcing the timer to move quicker with a few strategically placed paperclips.
     - "Sure it\u2019s dangerous but a true artist doesn\u2019t know the meaning of
-      the words \u201Cflagrant fire hazard\u201D.."
-    - "Obviously, once it comes out, it doesn\u2019t have enough butter.."
+      the words \u201Cflagrant fire hazard\u201D."
+    - "Obviously, once it comes out, it doesn\u2019t have enough butter."
     - "so after I take it out out I\u2019ll lather on a generous amount of salted
       butter and add a pinch of cinnamon because it\u2019s fall."
 --- !u!1001 &319263560
@@ -467,22 +472,22 @@ Prefab:
     - target: {fileID: 224528467781719614, guid: 08c74c83e53f2cd4b8f38e1faa6fb9f6,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -433
+      value: 107
       objectReference: {fileID: 0}
     - target: {fileID: 224528467781719614, guid: 08c74c83e53f2cd4b8f38e1faa6fb9f6,
         type: 2}
       propertyPath: m_SizeDelta.x
-      value: -50
+      value: 1870
       objectReference: {fileID: 0}
     - target: {fileID: 224528467781719614, guid: 08c74c83e53f2cd4b8f38e1faa6fb9f6,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: -916.1
+      value: 163.90002
       objectReference: {fileID: 0}
     - target: {fileID: 224528467781719614, guid: 08c74c83e53f2cd4b8f38e1faa6fb9f6,
         type: 2}
       propertyPath: m_AnchorMin.x
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 224528467781719614, guid: 08c74c83e53f2cd4b8f38e1faa6fb9f6,
         type: 2}
@@ -492,12 +497,12 @@ Prefab:
     - target: {fileID: 224528467781719614, guid: 08c74c83e53f2cd4b8f38e1faa6fb9f6,
         type: 2}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 224528467781719614, guid: 08c74c83e53f2cd4b8f38e1faa6fb9f6,
         type: 2}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224528467781719614, guid: 08c74c83e53f2cd4b8f38e1faa6fb9f6,
         type: 2}
@@ -1009,6 +1014,11 @@ Prefab:
       propertyPath: dialogueText
       value: 
       objectReference: {fileID: 1347574602}
+    - target: {fileID: 114141350646110196, guid: 4832cf3178d60fc4591b7792d1f0fa1d,
+        type: 2}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 107845821}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4832cf3178d60fc4591b7792d1f0fa1d, type: 2}
   m_IsPrefabAsset: 0
