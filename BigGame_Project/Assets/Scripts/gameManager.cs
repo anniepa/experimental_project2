@@ -15,6 +15,7 @@ public class gameManager : MonoBehaviour {
 	[SerializeField] Text scoreText;
 	private int score;
 	private int lifeCounter;
+    public Animator scoreAnimator;
 	List<GameObject> active;
 	Coroutine spawns;
 	void Start()
@@ -62,6 +63,7 @@ public class gameManager : MonoBehaviour {
 		foreach(GameObject g in active){
 			Destroy(g);
 		}
+        scoreAnimator.SetBool("DisplayOn", true);
         score = 0;
         scoreText.text = score.ToString();
         lifeCounter = 2;
