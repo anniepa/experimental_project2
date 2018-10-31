@@ -64,7 +64,7 @@ public class shipController : MonoBehaviour{
 		disable = true;
 		rb.velocity = new Vector2(0f,0f);
 		animator.SetTrigger("hurt");
-		gameObject.transform.position = new Vector3(0f, -2.5f, 0f);
+		gameObject.transform.position = new Vector3(0f, -2.5f, -5f);
 		yield return new WaitForSeconds(0.25f);
 		disable = false;
 	}

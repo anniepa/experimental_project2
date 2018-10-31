@@ -29,7 +29,7 @@ public class gameManager : MonoBehaviour {
 
 	IEnumerator SpawnWaves(){
 		yield return new WaitForSeconds(startWait);
-
+		scoreAnimator.SetBool("DisplayOn", false);
 		while(true) {
 			for (int i = 0; i < enemyCount; i++) {
 				GameObject enemy = enemies[Random.Range(0, enemies.Length)];
@@ -52,7 +52,7 @@ public class gameManager : MonoBehaviour {
 	}
 
 	public void loseLife(){
-		if(lifeCounter < 0){
+		if(lifeCounter <= 0){
 			gameReset();
 		}else{
 			lives[lifeCounter].SetActive(false);
@@ -72,6 +72,7 @@ public class gameManager : MonoBehaviour {
         lives[2].SetActive(true);
         StopCoroutine(spawns);
 		spawns = StartCoroutine(SpawnWaves());
+		
 	}
 
 }
