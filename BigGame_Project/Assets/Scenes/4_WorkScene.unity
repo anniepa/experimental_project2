@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -303,6 +303,16 @@ Prefab:
         type: 2}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114787525776550780, guid: 08c74c83e53f2cd4b8f38e1faa6fb9f6,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1890026371}
+    - target: {fileID: 114787525776550780, guid: 08c74c83e53f2cd4b8f38e1faa6fb9f6,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: DisplayNextSentence
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08c74c83e53f2cd4b8f38e1faa6fb9f6, type: 2}
@@ -1344,6 +1354,12 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4832cf3178d60fc4591b7792d1f0fa1d, type: 2}
   m_IsPrefabAsset: 0
+--- !u!114 &1890026371 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114141350646110196, guid: 4832cf3178d60fc4591b7792d1f0fa1d,
+    type: 2}
+  m_PrefabInternal: {fileID: 1890026370}
+  m_Script: {fileID: 11500000, guid: d0dea480671cd2e468b7906a49357124, type: 3}
 --- !u!1001 &2089374199
 Prefab:
   m_ObjectHideFlags: 0
