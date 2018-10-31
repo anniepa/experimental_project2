@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class enemy1 : MonoBehaviour {
+public class enemy : MonoBehaviour {
 
 	// Use this for initialization
 	[SerializeField] float speed = -15f;
@@ -12,7 +12,9 @@ public class enemy1 : MonoBehaviour {
 
 	private Rigidbody2D rb;
 	private gameManager manager;
+	private AudioSource boom;
 	void Start () {
+		boom = GetComponent<AudioSource>();
 		rb = GetComponent<Rigidbody2D>();
 		rb.velocity = transform.up * speed;
 		GameObject managerObject = GameObject.FindWithTag("GameController");
@@ -27,6 +29,7 @@ public class enemy1 : MonoBehaviour {
 	// Update is called once per frame
 	void FixedUpdate(){
 		if(health == 0){
+			boom.Play();
 			manager.addScore(points);
 			Destroy(gameObject);
 		}

@@ -26,7 +26,7 @@ public class shipController : MonoBehaviour{
 		rb = GetComponent<Rigidbody2D>();
 		animator = GetComponent<Animator>();
 		disable = false;
-		//pew = GetComponent<AudioSource>();
+		pew = GetComponent<AudioSource>();
 	}
 
 	void Update(){
@@ -36,7 +36,7 @@ public class shipController : MonoBehaviour{
 			nextFire = myTime + fireRate;
 			Instantiate(shot, shotSpawn.position, shotSpawn.rotation);
 
-			//pew.Play();
+			pew.Play();
 
 			nextFire = nextFire - myTime;
 			myTime = 0.0F;
@@ -65,7 +65,7 @@ public class shipController : MonoBehaviour{
 		rb.velocity = new Vector2(0f,0f);
 		animator.SetTrigger("hurt");
 		gameObject.transform.position = new Vector3(0f, -2.5f, 0f);
-		yield return new WaitForSeconds(0.5f);
+		yield return new WaitForSeconds(0.25f);
 		disable = false;
 	}
 

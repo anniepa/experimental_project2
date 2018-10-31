@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class gameManager : MonoBehaviour {
 
 	[SerializeField] GameObject[] enemies;
+	[SerializeField] GameObject[] lives;
 	[SerializeField] Vector3 spawnValues;
 	[SerializeField] int enemyCount;
 	[SerializeField] float startWait;
@@ -13,11 +14,12 @@ public class gameManager : MonoBehaviour {
 	[SerializeField] float waveWait;
 	[SerializeField] Text scoreText;
 	private int score;
-
+	private int lifeCounter;
 	List<GameObject> active;
 	Coroutine spawns;
 	void Start()
-	{
+	{	
+		lifeCounter = 2;
 		active = new List<GameObject>();
 		spawns = StartCoroutine(SpawnWaves());
 		score = 0;
@@ -49,7 +51,12 @@ public class gameManager : MonoBehaviour {
 	}
 
 	public void loseLife(){
-		Debug.Log("lifelost");
+		if(lifeCounter == 0){
+			gameReset();
+		}else{
+			lives[lifeCounter].SetActive(false);
+			lifeCounter -= 1;
+		}
 	}
 	public void gameReset(){
 		foreach(GameObject g in active){
@@ -58,6 +65,11 @@ public class gameManager : MonoBehaviour {
 		StopCoroutine(spawns);
 		spawns = StartCoroutine(SpawnWaves());
 		score = 0;
+		lifeCounter = 2;
+		lives[0].SetActive(true);
+		lives[1].SetActive(true);
+		lives[2].SetActive(true);
+		
 	}
 
 }
